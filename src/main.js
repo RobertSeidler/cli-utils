@@ -1,12 +1,17 @@
-const testFn = () => {
-    return "test application was executed successfully!";
-}
+const { readCommandlineArgs, readPipedData, tokenizeArgs, executeArgList, CLIProgram } = require("./cli-utils.js");
+const { applyFormating, checkCompability, FontEffects, BasicBackgroundColors } = require("./cli-formatter.js");
 
-const greetFn = (name) => {
-    return `Hello ${name}!`;
-}
+
+
 
 module.exports = {
-    testFn,
-    greetFn
-}
+    readCommandlineArgs, 
+    readPipedData,
+    tokenizeArgs,
+    executeArgList,
+    applyFormating, 
+    checkCompability, 
+    FontEffects, 
+    BasicBackgroundColors,
+    CLIProgram,
+};
